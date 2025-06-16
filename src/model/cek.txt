@@ -1,0 +1,8 @@
+GET /kabupaten?nama_kab=Lombok
+
+GET /kecamatan?id_kab=5203&nama_kec=Mataram
+
+GET /sekolah?status=NEGERI&id_kec=520301
+
+
+http://localhost:3000/kabupaten/search?search=simajayaku&sort=asc

@@ -1,0 +1,29 @@
+Hasil validasi input dan penanganan error yang benar biasanya berupa:
+
+*✅ 1. Jika Input Valid → Lanjut ke Proses*
+*Contoh response saat input benar:*
+{
+  "success": true,
+  "message": "Data berhasil diproses.",
+  "data": {
+    "name": "John Doe",
+    "email": "john@example.com"
+  }
+}
+
+*❌ 2. Jika Input Tidak Valid → Kirim Response Error*
+*Contoh response saat input salah:*
+{
+  "success": false,
+  "message": "Validasi gagal.",
+  "errors": {
+    "email": "Email tidak valid.",
+    "name": "Nama harus diisi dan minimal 3 karakter."
+  }
+}
+
+*❌ 3. Jika Data Tidak Ditemukan→ Kirim Response Error*
+{
+  "success": false,
+  "message": "Data sekolah tidak ditemukan."
+}
